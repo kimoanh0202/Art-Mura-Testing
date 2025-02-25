@@ -1,0 +1,4 @@
+GIẢI THÍCH DÒNG CODE SAU:
+    String productXpath = String.format("//tr[td[text()='%s']]//button[@type='button' and text()='Remove']", productID);
+//tr[td[text()='%s']]: Đây là phần đầu của XPath. Nó tìm kiếm tất cả các phần tử <tr> (table row) trong trang web mà có một phần tử <td> (table cell) con chứa văn bản khớp với %s.
+//button[@type='button' and text()='Remove']: Sau đó, nó tìm kiếm tất cả các phần tử <button> con của phần tử <tr> đó có thuộc tính type='button' và có văn bản là "Remove".
